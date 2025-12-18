@@ -1,6 +1,7 @@
 ## My UBUNTU SERVER installation ![alt text](https://github.com/miko6/appunti-di-ubuntu-server/blob/main/immagini/ubuntu-server-logo-300x125.png "ubuntu")  
 
-1. ***Abilitare il firewall ufw*** 
+1. ***Abilitare il firewall ufw***  
+
 `sudo ufw enable`  
 
 ---  
@@ -154,3 +155,34 @@ services:
 
 ---  
 
+7. ***BentoPDF container***  
+
+```
+services:
+  bentopdf:
+    # simple mode - bentopdf/bentopdf-simple:latest
+    # default mode - bentopdf/bentopdf:latest
+    image: bentopdf/bentopdf-simple:latest
+    container_name: bentopdf
+    restart: unless-stopped
+    ports:
+      - '8080:8080'
+```  
+
+- lanciare il comando seguente per compilare lo script  
+
+`docker compose up -d`  
+
+---  
+
+8. ***Installare sensori temperatura***  
+
+- prima aggiungere il repository  
+
+`sudo add-apt-repository ppa:malcscott/ppa`  
+
+`sudo apt-get update && sudo apt-get install lm-sensors hddtemp`
+
+- comando `sensors` per leggere temperature  
+
+- `sudo hddtemp /dev/sda2` per leggere temp hard disk  
