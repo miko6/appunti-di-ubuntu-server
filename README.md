@@ -95,9 +95,13 @@ read only = no
 
 ---  
 
-5. ***Installare Docker engine***  
+5. ***Installare Docker engine & compose***  
 
 [Guida](https://docs.docker.com/engine/install/ubuntu/)  
+
+- Installare Docker Compose  
+
+`sudo apt-get install docker-compose-plugin`
 
 ---  
 
