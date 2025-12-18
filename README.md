@@ -85,7 +85,7 @@ read only = no
 
 - Se hai ufw attivo, apri la porta per Samba  
 
-`sudo ufw allow 'Samba`  
+`sudo ufw allow 'Samba'`  
 
 ---  
 
