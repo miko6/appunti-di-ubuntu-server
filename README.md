@@ -1,9 +1,9 @@
 ## My UBUNTU SERVER installation ![alt text](https://github.com/miko6/appunti-di-ubuntu-server/blob/main/immagini/ubuntu-server-logo-300x125.png "ubuntu")  
 
-1. **Abilitare il firewall ufw** 
+1. ***Abilitare il firewall ufw*** 
 `sudo ufw enable`  
 
-2. **Installare ssh**  
+2. ***Installare ssh***  
 
 `sudo apt install openssh-server`  
 
@@ -21,7 +21,7 @@
 
 `sudo ufw allow ssh`  
 
-3. Installazione di Samba  
+3. ***Installazione di Samba***  
 
 `sudo apt update`  
 
@@ -82,6 +82,6 @@ read only = no
 
 `sudo ufw allow 'Samba`  
 
-4. Installare duf (Disk Usage/Free utility)  
+4. ***Installare duf (Disk Usage/Free utility)***  
 
 `sudo apt install duf`
