@@ -94,7 +94,13 @@ read only = no
 
 ---  
 
-5. ***Pihole container***  
+5. ***Installare Docker engine***  
+
+[Guida](https://docs.docker.com/engine/install/ubuntu/)  
+
+---  
+
+6. ***Pihole container***  
 
 https://github.com/pi-hole/docker-pi-hole?tab=readme-ov-file  
 
