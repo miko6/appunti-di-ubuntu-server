@@ -7,7 +7,7 @@
 
 `sudo apt install openssh-server`  
 
-- verificare lo stato e attivare Ubuntu Server SSH  
+> verificare lo stato e attivare Ubuntu Server SSH  
 
 `sudo systemctl status ssh`  
 
