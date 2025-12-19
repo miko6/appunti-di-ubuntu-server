@@ -1,4 +1,4 @@
-## My UBUNTU SERVER installation ![alt text](https://github.com/miko6/appunti-di-ubuntu-server/blob/main/immagini/ubuntu.png "ubuntu")  
+## My UBUNTU SERVER installation ![alt](https://github.com/miko6/appunti-di-ubuntu-server/blob/main/immagini/ubuntu.png)  
 
 1. ***Abilitare il firewall ufw***  
 
