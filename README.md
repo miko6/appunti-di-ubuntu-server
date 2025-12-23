@@ -190,3 +190,38 @@ services:
 - comando `sensors` per leggere temperature  
 
 - `sudo hddtemp /dev/sda2` per leggere temp hard disk  
+
+---
+
+9. ***Montaggio automatico disco secondario***
+
+- identificare il disco ed il suo UUID con il comando  
+
+`sudo blkid`  
+
+- creaiamo il punto di mount  
+
+`sudo mkdir -p /mnt/dati`  
+
+- impostiamo i permessi necessari  
+
+`sudo chown -R tuo_utente:tuo_utente /mnt/dati`  
+
+- modifica del file /etc/fstab  
+
+`sudo nano /etc/fstab`  
+
+- aggiungiamo questa riga alla fine del file  
+
+`UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  /mnt/dati  ext4  defaults,nofail  0  2`  
+> :memo: **Note:** per un server/nas possiamo sostituire questi parametri alla precedente stringa `defaults,noatime,nofail`  
+
+- verifiche, prima senza riavviare  
+
+`sudo mount -a` (se non si sono errori il file funziona)  
+
+- riavviamo  
+
+`sudo systemctl reboot`  
+
+- al riavvio `lsblk` per conferma
